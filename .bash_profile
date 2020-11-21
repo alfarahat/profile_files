@@ -5,3 +5,5 @@ if [ -n "$TMUX" ]; then
 fi
 # Trigger ~/.bashrc commands
 . ~/.bashrc
+
+export QT_QPA_PLATFORMTHEME=gtk2
