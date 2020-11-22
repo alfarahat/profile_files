@@ -60,4 +60,6 @@ tar -xvf ./terminator.tar -C ~/.config/ && chown -R $USER:$USER ~/.config/termin
 
 cd ~
 
-git clone --depth 1 https://github.com/junegunn/fzf.git && cd ~/fzf &&  ~/fzf/install --completion --update-rc --key-bindings
+git clone --depth 1 https://github.com/junegunn/fzf.git && cd ~/fzf &&  ~/fzf/install --completion --update-rc --key-bindings 1>/dev/null 2&>1
+echo -e "Re Sourcing RCs..."
+source ~/.bashrc
