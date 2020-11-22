@@ -12,11 +12,10 @@ fi
 
 #Install Fonts-Powerline for pretty bars
 sudo apt install fonts-powerline cmatrix curl
-if [  -d ~/profile_files ]; then
-	rm -rf ~/profile_files 1>/dev/null 2&>1
-	rm -rf ~/.vim
-        rm -rf ~/fzf
-fi
+
+	rm -rf ~/.vim 1>/dev/null 2&>1
+        rm -rf ~/fzf 1>/dev/null 2&>1
+
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
