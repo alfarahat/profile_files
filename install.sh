@@ -45,7 +45,7 @@ for i in $file; do
     cp -f ./$i ~/$i
     
 done
-cd
+
 echo -e "Re Sourcing RCs..."
 source ~/.bashrc
 
