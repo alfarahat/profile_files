@@ -107,7 +107,7 @@ syntax enable
 
 
 " Show line numbers or not
-"set nu
+set nu
 set nornu
 set background=dark
 "let g:solarized_termcolors=256
@@ -353,9 +353,12 @@ Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'morhetz/gruvbox'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
+olorscheme gruvbox
+set background=dark
 
 "https://github.com/junegunn/vim-plug
