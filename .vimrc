@@ -354,6 +354,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
+Plug 'flazz/vim-colorschemes'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
