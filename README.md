@@ -9,5 +9,10 @@ cd profile_files
 
 cd 
 
-vim .vimrc --> :PlugInstall
+vim .vimrc
+
+:PlugInstall
+
+:q
+
 
