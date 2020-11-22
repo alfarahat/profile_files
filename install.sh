@@ -12,9 +12,13 @@ fi
 
 #Install Fonts-Powerline for pretty bars
 sudo apt install fonts-powerline cmatrix curl
-
+rm -rf ~/.vim
+rm -rf ~/fzf
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+git clone --depth 1 https://github.com/junegunn/fzf.git && cd ~/fzf &&  ~/fzf/install --completion --update-rc --key-bindings
+
 
 date=$(date +%F-%H%M%S)
 
