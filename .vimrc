@@ -358,7 +358,7 @@ Plug 'morhetz/gruvbox'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
-olorscheme gruvbox
+colorscheme gruvbox
 set background=dark
 
 "https://github.com/junegunn/vim-plug
