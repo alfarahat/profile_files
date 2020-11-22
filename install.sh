@@ -19,7 +19,7 @@ sudo apt install fonts-powerline cmatrix curl
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-git clone --depth 1 https://github.com/junegunn/fzf.git && cd ~/fzf &&  ~/fzf/install --completion --update-rc --key-bindings
+
 
 
 date=$(date +%F-%H%M%S)
@@ -56,4 +56,6 @@ if [ ! -d ~/.config ]; then
     mkdir -p ~/.config && chmod -R 700 ~/.config
 	
 fi
-tar -xvf ./terminator.tar -C ~/.config/ && chown -R $USER:$USER ~/.config/terminator
+tar -xvf ./terminator.tar -C ~/.config/ && chown -R $USER:$USER ~/.config/terminator  1>/dev/null 2&>1
+
+git clone --depth 1 https://github.com/junegunn/fzf.git && cd ~/fzf &&  ~/fzf/install --completion --update-rc --key-bindings
