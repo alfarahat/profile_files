@@ -8,7 +8,7 @@ case $- in
       *) return;;
 esac
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/tools/bin
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -21,8 +21,8 @@ shopt -s histappend
 #HISTSIZE=1000
 #HISTFILESIZE=2000
 
-HISTSIZE=10000
-HISTFILESIZE=99999
+HISTSIZE=9000000000
+HISTFILESIZE=9000000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
