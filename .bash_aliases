@@ -19,6 +19,7 @@ alias win10='rdesktop -g 1440x900 -x roadband -a 32 -c -0 -P -r clipboard:CLIPBO
 alias zfs-scriptes='cd "/storage/data/dev/zfs/is-pro_appliance/2020.9/scripts"'
 
 alias yt="youtube-dl --add-metadata -ic"
+alias yt-list="youtube-dl --add-metadata -ic -o '%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s' "
 
 
 #alias showmaster='sudo virsh list --all'
