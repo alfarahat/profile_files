@@ -19,6 +19,10 @@ alias win10='rdesktop -g 1440x900 -x roadband -a 32 -c -0 -P -r clipboard:CLIPBO
 alias zfs-scriptes='cd "/storage/data/dev/zfs/is-pro_appliance/2020.9/scripts"'
 
 alias yt="youtube-dl --add-metadata -ic"
+alias yt-best="youtube-dl --add-metadata -ic -f '(bestvideo+bestaudio/best)' "
+alias yt-a_v="youtube-dl --add-metadata -ic -f '(bestvideo,bestaudio/best)' -o '%(title)s.f%(format_id)s.%(ext)s' "
+alias yt-sound="youtube-dl --add-metadata -ic -f '(bestaudio/best)' -o '%(title)s.f%(format_id)s.%(ext)s' "
+alias yt-video="youtube-dl --add-metadata -ic -f '(bestvideo)' -o '%(title)s.f%(format_id)s.%(ext)s' "
 alias yt-list="youtube-dl --add-metadata -ic -o '%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s' "
 
 
