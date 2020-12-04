@@ -358,6 +358,8 @@ Plug 'flazz/vim-colorschemes'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'stsewd/fzf-checkout.vim'
+Plug 'preservim/nerdtree'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
