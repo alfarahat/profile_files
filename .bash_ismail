@@ -31,5 +31,7 @@ alias yt-list="youtube-dl --add-metadata -ic -o '%(playlist_title)s/%(playlist_i
 alias domain="xfreerdp /u:"ismail" /d:lab.local /v:192.168.100.1:3389 /w:1440  /h:900 /p:ismail &"
 #alias win10="xfreerdp /u:"ismail" /v:192.168.100.10:3389 /w:1440  /h:900 /p:ismail &"
 
-
+ # Add ssh ket to the ssh aget for github
+ eval "$(ssh-agent -s)" > /dev/null 2&>1
+ ssh-add ~/.ssh/github > /dev/null 2&>1
 
