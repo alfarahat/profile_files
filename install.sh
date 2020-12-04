@@ -27,7 +27,7 @@ date=$(date +%F-%H%M%S)
 
 
     mkdir -p ~/.rc_backup/dotfiles-$date && chmod -R 750 ~/.rc_backup/dotfiles-$date
-	
+
 
 
 ##  files=$(find . -maxdepth 1 -name ".*" -type f  -printf "%f\n")
@@ -42,7 +42,7 @@ for i in $file; do
     fi
     #ln -s $PWD/$file ~/$file
     cp -f ./$i ~/$i
-    
+
 done
 
 echo -e "Re Sourcing RCs..."
@@ -54,12 +54,12 @@ source ~/.bashrc
 #Terminator extraction
 if [ ! -d ~/.config ]; then
     mkdir -p ~/.config && chmod -R 700 ~/.config
-	
+
 fi
 tar -xvf ./terminator.tar -C ~/.config/ && chown -R $USER:$USER ~/.config/terminator  1>/dev/null 2&>1
 
 cd ~
 
-git clone --depth 1 https://github.com/junegunn/fzf.git && cd ~/fzf &&  ~/fzf/install --all 
+git clone --depth 1 https://github.com/junegunn/fzf.git && cd ~/fzf &&  ~/fzf/install --all
 echo -e "Re Sourcing RCs..."
 source ~/.bashrc
