@@ -484,7 +484,7 @@ unset bash_prompt
 #    source /profile-Ismail
 #fi
 
-for i in ".bash_aliases" ".bash_exports"; do
+for i in ".bash_aliases" ".bash_exports" ".bash_ismail"; do
 if [ -f ~/$i ]
 then
 #    echo "Sourcing $i ....."
