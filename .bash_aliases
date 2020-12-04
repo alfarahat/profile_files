@@ -1,5 +1,5 @@
 
 alias vi=vim
-alias vms=virsh list --all
+alias vms="virsh list --all"
 
 
