@@ -1,3 +1,4 @@
+" :g/address/s//name/g  --- > search and replace
 " execute pathogen#infect()
 set mouse=
 set ttymouse=
