@@ -484,11 +484,15 @@ unset bash_prompt
 #    source /profile-Ismail
 #fi
 
+#files=""
 for i in ".bash_aliases" ".bash_exports" ".bash_ismail"; do
 if [ -f ~/$i ]
 then
 #    echo "Sourcing $i ....."
+#files="$files $(echo $i|awk -F "_" '{print $2}')"
     source ~/$i
 fi
-
 done
+
+echo $files" Sourced.."
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
