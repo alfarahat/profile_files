@@ -494,5 +494,5 @@ then
 fi
 done
 
-echo $files" Sourced.."
+#echo $files" Sourced.."
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
