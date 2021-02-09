@@ -9,6 +9,11 @@ else
     sudo apt -y install vim vim-scripts terminator
 fi
 #sudo apt install terminator
+#sudo apt -y install vim vim-scripts terminator
+# remove youtube-dl form orignal and install the latest
+sudo apt -y remove youtube-dl
+# Install some packages
+
 
 # install youtube-dl
 
