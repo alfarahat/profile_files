@@ -10,6 +10,16 @@ else
 fi
 #sudo apt install terminator
 
+# install youtube-dl
+
+if [ -f /usr/local/bin/youtube-dl ]; then
+    sudo cp -v $(which youtube-dl) $(which youtube-dl)-$(youtube-dl --version) && youtube-dl -U
+else    
+    sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+    sudo chmod a+rx /usr/local/bin/youtube-dl
+fi	
+
+
 #Install Fonts-Powerline for pretty bars
 sudo apt install fonts-powerline cmatrix curl
 
