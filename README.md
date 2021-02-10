@@ -12,6 +12,8 @@ cd && vim .vimrc
 
 :q
 
+:q
+
 ## For uninstall
 
 Just cd && rm -rf .vim*
