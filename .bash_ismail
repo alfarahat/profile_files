@@ -23,7 +23,7 @@ alias yt-a_v="youtube-dl --add-metadata -ic -f '(bestvideo,bestaudio/best)' -o '
 alias yt-sound="youtube-dl --add-metadata -ic -f '(bestaudio/best)' -o '%(title)s.f%(format_id)s.%(ext)s' "
 alias yt-video="youtube-dl --add-metadata -ic -f '(bestvideo)' -o '%(title)s.f%(format_id)s.%(ext)s' "
 alias yt-list="youtube-dl --add-metadata -ic -o '%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s' "
-alias yt-list-best="youtube-dl --add-metadata -ic -f '(bestvideo+bestaudio/best)' -o '%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s' "
+
 
 #alias showmaster='sudo virsh list --all'
 #alias startubuntutv='sudo virsh start ubuntu18.04 && sudo virsh list --all'
@@ -41,6 +41,3 @@ alias battery="upower -i `upower -e | grep 'BAT'`"
 croncat () {
     cat /etc/cron.d/$1|grep $2
 }
-
-ROOT=$(df -h /|grep ROOT|awk '{print $1 }')
-

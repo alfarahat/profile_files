@@ -485,7 +485,7 @@ unset bash_prompt
 #fi
 
 #files=""
-for i in ".bash_aliases" ".bash_exports" ".bash_ismail"; do
+for i in ".bash_aliases" ".bash_exports" ".bash_ismail" ".bash_github"; do
 if [ -f ~/$i ]
 then
 #    echo "Sourcing $i ....."
