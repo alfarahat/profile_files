@@ -16,6 +16,9 @@ alias ssh='ssh -o StrictHostKeyChecking=accept-new'
 alias win10='rdesktop -g 1440x900 -x roadband -a 32 -c -0 -P -r clipboard:CLIPBOARD -p ismail -u ismail 192.168.100.10 -5 &'
 
 alias zfs-scriptes='cd "/storage/data/dev/zfs/ISPro/2020.10/scripts"'
+alias zfs-laptop='cd "/storage/nvmep3/ispro-build"'
+alias ispro-image-laptop='cd "/storage/nvmep3/ispro-image"'
+
 
 alias yt="youtube-dl --add-metadata -ic"
 alias yt-best="youtube-dl --add-metadata -ic -f '(bestvideo+bestaudio/best)' "
@@ -35,9 +38,18 @@ alias http="~/docker/http.sh /"
 alias battery="upower -i `upower -e | grep 'BAT'`"
 
  # Add ssh ket to the ssh aget for github
-  eval "$(ssh-agent -s)" > /dev/null 2&>1
- ssh-add ~/.ssh/github > /dev/null 2&>1
+  eval "$(ssh-agent -s)" > /dev/null 2>&1
+ ssh-add ~/.ssh/github > /dev/null 2>&1
 
 croncat () {
     cat /etc/cron.d/$1|grep $2
 }
+
+alias ls.f='find . -maxdepth 1 -name ".*" -type f  -printf "%f\n"'
+alias ls.d='find . -maxdepth 1 -name ".*" -type d  -printf "%f\n"'
+alias a=clear
+ispro=$(df -h /|grep ROOT|awk '{print $1 }')
+
+alias vms='virsh list --all'
+
+
