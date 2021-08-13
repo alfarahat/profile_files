@@ -60,6 +60,13 @@ for i in $file; do
 
 done
 
+file=$(find ~ -maxdepth 1 -name ".*" -type f  -printf "%f\n")
+
+for i in $file; do
+          cp -f ~/$i ~/.rc_backup/dotfiles-$date/$i
+
+done
+
 echo -e "Re Sourcing RCs..."
 source ~/.bashrc
 
