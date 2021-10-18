@@ -108,7 +108,8 @@ syntax enable
 
 
 " Show line numbers or not
-set nu
+"set nu
+set nonu
 set nornu
 set background=dark
 "let g:solarized_termcolors=256
