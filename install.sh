@@ -10,18 +10,18 @@ else
 fi
 #sudo apt install terminator
 #sudo apt -y install vim vim-scripts terminator
-# remove youtube-dl form orignal and install the latest
-sudo apt -y remove youtube-dl
+# remove yt-dlp form orignal and install the latest
+sudo apt -y remove yt-dlp
 # Install some packages
 
 
-# install youtube-dl
+# install yt-dlp
 
-if [ -f /usr/local/bin/youtube-dl ]; then
-    sudo cp -v $(which youtube-dl) $(which youtube-dl)-$(youtube-dl --version) && youtube-dl -U
+if [ -f /usr/local/bin/yt-dlp ]; then
+    sudo cp -v $(which yt-dlp) $(which yt-dlp)-$(yt-dlp --version) && yt-dlp -U
 else    
-    sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
-    sudo chmod a+rx /usr/local/bin/youtube-dl
+	sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
+	sudo chmod a+rx /usr/local/bin/yt-dlp
 fi	
 
 
