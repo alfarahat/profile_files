@@ -19,6 +19,6 @@ cd && vim .vimrc
 Just cd && rm -rf .vim*
 cp ~/.rc_backup/* ~/
 
-relogin.
+relogin..
 
 
